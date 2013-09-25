@@ -84,44 +84,52 @@ static void command_line_error( const char *file, int line, const char *fmt, ...
  argument was properly converted by sscanf, and for ARGUMENT_INPUT_FILE, checks that 
  the file can be opened for reading.
 */
-static bool command_line_get_argument( int argc, char **argv, const char *arg_name, arguments_type arg_type, void *arg_data ){
+static bool command_line_get_argument( const int argc, const char **argv, const char *arg_name, arguments_type arg_type, void *arg_data, int count=1 ){
     FILE *fp=NULL;
+    int k;
     for( int i=1; i<argc; i++ ){
         if( strcmp( arg_name, argv[i] ) == 0 && (arg_type == ARGUMENT_FLAG || i+1 < argc) ){
             switch( arg_type ){
                 case ARGUMENT_FLAG:
                     *((bool*)arg_data) = true;
-                    return true;
                     break;
 				case ARGUMENT_BOOL:
-					if( strcmp( argv[i+1], "true" ) == 0 ){
-						*((bool*)arg_data) = true;
-						return true;
-					} else if( strcmp( argv[i+1], "false" ) == 0 ){
-						*((bool*)arg_data) = false;
-						return true;
-					} 
-					command_line_error( __FILE__, __LINE__, "could not parse boolean argument for argument %s from %s\n", arg_name, argv[i+1] );
+                    for( k=0; k<count; k++ ){
+                        if( strcmp( argv[i+1+k], "true" ) == 0 ){
+                            *((bool*)arg_data) = true;
+                            return true;
+                        } else if( strcmp( argv[i+1+k], "false" ) == 0 ){
+                            *((bool*)arg_data) = false;
+                            return true;
+                        }
+                        command_line_error( __FILE__, __LINE__, "could not parse boolean argument for argument %s from %s\n", arg_name, argv[i+1+k] );
+                    }
 					return false;
 					break;
                 case ARGUMENT_INT:
-                    if( sscanf( argv[i+1], "%d", (int*)arg_data ) != 1 ){
-                        command_line_error( __FILE__, __LINE__, "could not parse integer argument for argument %s from %s\n", arg_name, argv[i+1] );
-                        return false;
+                    for( k=0; k<count; k++ ){
+                        if( sscanf( argv[i+1+k], "%d", (int*)arg_data+k ) != 1 ){
+                            command_line_error( __FILE__, __LINE__, "could not parse integer argument for argument %s from %s\n", arg_name, argv[i+1+k] );
+                            return false;
+                        }
                     }
                     return true;
                     break;
                 case ARGUMENT_FLOAT:
-                    if( sscanf( argv[i+1], "%f", (float*)arg_data ) != 1 ){
-                        command_line_error( __FILE__, __LINE__, "could not parse floating point argument for argument %s from %s\n", arg_name, argv[i+1] );
-                        return false;
+                    for( k=0; k<count; k++ ){
+                        if( sscanf( argv[i+1+k], "%f", (float*)arg_data+k ) != 1 ){
+                            command_line_error( __FILE__, __LINE__, "could not parse floating point argument for argument %s from %s\n", arg_name, argv[i+1+k] );
+                            return false;
+                        }
                     }
                     return true;
                     break;
                 case ARGUMENT_DOUBLE:
-                    if( sscanf( argv[i+1], "%lf", (double*)arg_data ) != 1 ){
-                        command_line_error( __FILE__, __LINE__, "could not parse double precision argument for argument %s from %s\n", arg_name, argv[i+1] );
-                        return false;
+                    for( k=0; k<count; k++ ){
+                        if( sscanf( argv[i+1+k], "%lf", (double*)arg_data+k ) != 1 ){
+                            command_line_error( __FILE__, __LINE__, "could not parse double precision argument for argument %s from %s\n", arg_name, argv[i+1+k] );
+                            return false;
+                        }
                     }
                     return true;
                     break;
