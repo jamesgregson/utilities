@@ -30,9 +30,10 @@
     auto test_case = []( void ) -> bool { \
         const char *TEST_CASE_NAME = #name; \
         bool TEST_CASE_OK = true; \
-        std::cout << "  Running test case '" << TEST_CASE_NAME << "'..." << std::endl;
+        std::cout << "  Running test case '" << TEST_CASE_NAME << "'...";
 
 #define TEST_CASE_END \
+        if( TEST_CASE_OK ) std::cout << "passed!" << std::endl; \
         return TEST_CASE_OK; \
     }; \
     TEST_CASES.push_back( test_case ); \
@@ -41,7 +42,7 @@
 #define CHECK( A ) { \
     bool CHECK_TMP = (A); \
     if( !CHECK_TMP ){ \
-        std::cout << "    check(" << #A << ") " << (CHECK_TMP ? "passed!" : "failed!") << std::endl; \
+        std::cout << std::endl << "    check(" << #A << ") " << (CHECK_TMP ? "passed!" : "failed!") << std::endl; \
         std::cout << "      " << __FILE__ << ", line: " << __LINE__ << std::endl; \
         std::cout << "      " << "Argument " << #A << " evaluated to false!" << std::endl; \
     } \
@@ -51,7 +52,7 @@
 #define CHECK_EQUAL( A, B ) { \
     bool CHECK_EQUAL_TMP = (A) == (B); \
     if( !CHECK_EQUAL_TMP ){ \
-        std::cout << "    check_equal(" << #A << ", " << #B << ") " << (CHECK_EQUAL_TMP ? "passed!" : "failed!") << std::endl; \
+        std::cout << std::endl << "    check_equal(" << #A << ", " << #B << ") " << (CHECK_EQUAL_TMP ? "passed!" : "failed!") << std::endl; \
         std::cout << "      " << __FILE__ << ", line: " << __LINE__ << std::endl; \
         std::cout << "      " << "Called values:"; \
         std::cout << " " << #A << "=" << (A); \
@@ -63,7 +64,7 @@
 #define CHECK_CLOSE( A, B, TOL ) {\
     bool CHECK_CLOSE_TMP = (A)-(B) <= (TOL) && (B)-(A) <= (TOL); \
     if( !CHECK_CLOSE_TMP ){ \
-        std::cout << "    check_close(" << #A << ", " << #B << ") " << (CHECK_CLOSE_TMP ? "passed!" : "failed!") << std::endl; \
+        std::cout << std::endl << "    check_close(" << #A << ", " << #B << ") " << (CHECK_CLOSE_TMP ? "passed!" : "failed!") << std::endl; \
         std::cout << "      " << __FILE__ << ", line: " << __LINE__ << std::endl; \
         std::cout << "      " << "Called values:"; \
         std::cout << " " << #A << "=" << (A); \
