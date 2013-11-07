@@ -88,7 +88,7 @@ static bool command_line_get_argument( const int argc, const char **argv, const 
     FILE *fp=NULL;
     int k;
     for( int i=1; i<argc; i++ ){
-        if( strcmp( arg_name, argv[i] ) == 0 && (arg_type == ARGUMENT_FLAG || i+1 < argc) ){
+        if( strcmp( arg_name, argv[i] ) == 0 && (arg_type == ARGUMENT_FLAG || i+count < argc) ){
             switch( arg_type ){
                 case ARGUMENT_FLAG:
                     *((bool*)arg_data) = true;
