@@ -90,7 +90,15 @@ public:
         m_has_required = true;
     }
     
-    bool parse( const int argc, const char **argv ){
+    bool option_was_parsed( const std::string &name ) const {
+        for( int i=0; i<m_options.size(); i++ ){
+            if( m_options[i].name == name && m_options[i].found )
+                return true;
+        }
+        return false;
+    }
+    
+    bool parse( const int argc, const char **argv, bool print_command_line=false ){
         bool ok = true;
         for( int i=0; i<m_options.size(); i++ ){
             if( m_options[i].required ){
@@ -147,6 +155,12 @@ public:
             }
             std::cout << std::endl << std::endl;
             return false;
+        }
+        if( print_command_line ){
+            for( int i=0; i<argc; i++ ){
+                std::cout << argv[i] << " ";
+            }
+            std::cout << std::endl;
         }
         return true;
     }

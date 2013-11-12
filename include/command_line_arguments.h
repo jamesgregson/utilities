@@ -1,5 +1,5 @@
 #ifndef COMMAND_LINE_ARGUMENTS_H
-#define COMMANG_LINE_ARGUMENTS_H
+#define COMMAND_LINE_ARGUMENTS_H
 
 #include<ctype.h>
 #include<cstdio>
