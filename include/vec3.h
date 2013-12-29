@@ -140,6 +140,19 @@ namespace geom {
             *this=tmp;
             return tmp;
         }
+        
+        inline vec3<real> min( const vec3<real> &in ) const {
+            return vec3<real>( std::min( m_x, in[0] ), std::min( m_y, in[1] ), std::min( m_z, in[2] ) );
+        }
+        
+        inline vec3<real> max( const vec3<real> &in ) const {
+            return vec3<real>( std::max( m_x, in[0] ), std::max( m_y, in[1] ), std::max( m_z, in[2] ) );
+        }
+        
+        inline static vec3<real> random( const real size=1.0 ){
+            return vec3<real>( size*(drand48()-0.5), size*(drand48()-0.5), size*(drand48()-0.5) );
+        }
+
     };
     
     template<typename real>
