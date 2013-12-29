@@ -18,10 +18,19 @@ std::string str_format( const char *fmt, ... ){
 }
 
 template<typename T>
-std::string str( const T &in ){
-    std::stringstream ss;
-    ss << in;
-    return ss.str();
+std::string to_str( const T &in ){
+    std::ostringstream oss;
+    oss << in;
+    return oss.str();
 }
+
+template<typename T>
+T from_str( const std::string &s ){
+    std::istringstream iss(s);
+    T val;
+    iss >> val;
+    return val;
+}
+
 
 #endif
