@@ -17,70 +17,7 @@
 #include<vtkXMLImageDataReader.h>
 
 namespace utilities {
-	
-	template< typename real, typename image >
-	void load_vtr( const char *filename, int *dim, real *aabb, std::map< std::string, image > &point_data, std::map< std::string, image > &cell_data ){
-		vtkSmartPointer<vtkXMLRectilinearGridReader> reader = vtkSmartPointer<vtkXMLRectilinearGridReader>::New();
-		reader->SetFileName( filename );
-		reader->Update();
 		
-		vtkSmartPointer<vtkRectilinearGrid> vtr(reader->GetOutput());
-		vtr->GetDimensions(dim);
-		
-		int tdim[] = { dim[0]+1, dim[1]+1, dim[2]==1?dim[2]:dim[2]+1 };
-		
-		vtkSmartPointer<vtkDoubleArray> xcoords = vtkSmartPointer<vtkDoubleArray>::New();
-		vtkSmartPointer<vtkDoubleArray> ycoords = vtkSmartPointer<vtkDoubleArray>::New();
-		vtkSmartPointer<vtkDoubleArray> zcoords = vtkSmartPointer<vtkDoubleArray>::New();
-		xcoords->DeepCopy( vtr->GetXCoordinates() );
-		ycoords->DeepCopy( vtr->GetYCoordinates() );
-		zcoords->DeepCopy( vtr->GetZCoordinates() );
-		aabb[0] = xcoords->GetValue(0); aabb[1] = xcoords->GetValue(dim[0]-1);
-		aabb[2] = ycoords->GetValue(0); aabb[3] = ycoords->GetValue(dim[1]-1);
-		aabb[4] = zcoords->GetValue(0); aabb[5] = zcoords->GetValue(dim[2]-1);
-		
-		vtkSmartPointer<vtkPointData> pd(vtr->GetPointData());
-		for( int arr=0; arr<pd->GetNumberOfArrays(); arr++ ){
-			vtkSmartPointer<vtkDoubleArray> tmp = vtkSmartPointer<vtkDoubleArray>::New();
-			tmp->DeepCopy( pd->GetArray(arr) );
-			tmp->SetName( pd->GetArray(arr)->GetName() );
-			int nc = tmp->GetNumberOfComponents();
-			image timage( tdim[0], tdim[1], tdim[2], nc );
-			for( int i=0; i<tdim[0]; i++ ){
-				for( int j=0; j<tdim[1]; j++ ){
-					for( int k=0; k<tdim[2]; k++ ){
-						int ijk[] = { i, j, k };
-						for( int c=0; c<nc; c++ ){
-							vtkIdType id = vtr->ComputePointId( ijk );
-							timage(i,j,k,c) = tmp->GetComponent( id, c );
-						}
-					}
-				}
-			}
-			point_data[ std::string(tmp->GetName()) ] = timage;
-		}
-		vtkSmartPointer<vtkCellData> cd(vtr->GetCellData());
-		for( int arr=0; arr<cd->GetNumberOfArrays(); arr++ ){
-			vtkSmartPointer<vtkDoubleArray> tmp = vtkSmartPointer<vtkDoubleArray>::New();
-			tmp->DeepCopy( pd->GetArray(arr) );
-			tmp->SetName( pd->GetArray(arr)->GetName() );
-			int nc = tmp->GetNumberOfComponents();
-			image timage( dim[0], dim[1], dim[2], nc );
-			for( int i=0; i<dim[0]; i++ ){
-				for( int j=0; j<dim[1]; j++ ){
-					for( int k=0; k<dim[2]; k++ ){
-						int ijk[] = { i, j, k };
-						for( int c=0; c<nc; c++ ){
-							vtkIdType id = vtr->ComputeCellId( ijk );
-							timage(i,j,k,c) = tmp->GetComponent( id, c );
-						}
-					}
-				}
-			}
-			cell_data[ std::string(tmp->GetName()) ] = timage;
-		}
-	}
-	
 	template< typename real, typename image >
 	void load_vti( const char *filename, int *dim, real *aabb, std::map< std::string, image > &point_data, std::map< std::string, image > &cell_data ){
 		vtkSmartPointer<vtkXMLImageDataReader> reader = vtkSmartPointer<vtkXMLImageDataReader>::New();
@@ -188,6 +125,69 @@ namespace utilities {
 		writer->SetInput( vti );
 		writer->SetFileName( filename );
 		writer->Write();
+	}
+	
+	template< typename real, typename image >
+	void load_vtr( const char *filename, int *dim, real *aabb, std::map< std::string, image > &point_data, std::map< std::string, image > &cell_data ){
+		vtkSmartPointer<vtkXMLRectilinearGridReader> reader = vtkSmartPointer<vtkXMLRectilinearGridReader>::New();
+		reader->SetFileName( filename );
+		reader->Update();
+		
+		vtkSmartPointer<vtkRectilinearGrid> vtr(reader->GetOutput());
+		vtr->GetDimensions(dim);
+		
+		int tdim[] = { dim[0]+1, dim[1]+1, dim[2]==1?dim[2]:dim[2]+1 };
+		
+		vtkSmartPointer<vtkDoubleArray> xcoords = vtkSmartPointer<vtkDoubleArray>::New();
+		vtkSmartPointer<vtkDoubleArray> ycoords = vtkSmartPointer<vtkDoubleArray>::New();
+		vtkSmartPointer<vtkDoubleArray> zcoords = vtkSmartPointer<vtkDoubleArray>::New();
+		xcoords->DeepCopy( vtr->GetXCoordinates() );
+		ycoords->DeepCopy( vtr->GetYCoordinates() );
+		zcoords->DeepCopy( vtr->GetZCoordinates() );
+		aabb[0] = xcoords->GetValue(0); aabb[1] = xcoords->GetValue(dim[0]-1);
+		aabb[2] = ycoords->GetValue(0); aabb[3] = ycoords->GetValue(dim[1]-1);
+		aabb[4] = zcoords->GetValue(0); aabb[5] = zcoords->GetValue(dim[2]-1);
+		
+		vtkSmartPointer<vtkPointData> pd(vtr->GetPointData());
+		for( int arr=0; arr<pd->GetNumberOfArrays(); arr++ ){
+			vtkSmartPointer<vtkDoubleArray> tmp = vtkSmartPointer<vtkDoubleArray>::New();
+			tmp->DeepCopy( pd->GetArray(arr) );
+			tmp->SetName( pd->GetArray(arr)->GetName() );
+			int nc = tmp->GetNumberOfComponents();
+			image timage( tdim[0], tdim[1], tdim[2], nc );
+			for( int i=0; i<tdim[0]; i++ ){
+				for( int j=0; j<tdim[1]; j++ ){
+					for( int k=0; k<tdim[2]; k++ ){
+						int ijk[] = { i, j, k };
+						for( int c=0; c<nc; c++ ){
+							vtkIdType id = vtr->ComputePointId( ijk );
+							timage(i,j,k,c) = tmp->GetComponent( id, c );
+						}
+					}
+				}
+			}
+			point_data[ std::string(tmp->GetName()) ] = timage;
+		}
+		vtkSmartPointer<vtkCellData> cd(vtr->GetCellData());
+		for( int arr=0; arr<cd->GetNumberOfArrays(); arr++ ){
+			vtkSmartPointer<vtkDoubleArray> tmp = vtkSmartPointer<vtkDoubleArray>::New();
+			tmp->DeepCopy( cd->GetArray(arr) );
+			tmp->SetName( cd->GetArray(arr)->GetName() );
+			int nc = tmp->GetNumberOfComponents();
+			image timage( dim[0], dim[1], dim[2], nc );
+			for( int i=0; i<dim[0]; i++ ){
+				for( int j=0; j<dim[1]; j++ ){
+					for( int k=0; k<dim[2]; k++ ){
+						int ijk[] = { i, j, k };
+						for( int c=0; c<nc; c++ ){
+							vtkIdType id = vtr->ComputeCellId( ijk );
+							timage(i,j,k,c) = tmp->GetComponent( id, c );
+						}
+					}
+				}
+			}
+			cell_data[ std::string(tmp->GetName()) ] = timage;
+		}
 	}
 	
 	template< typename real, typename image >
