@@ -26,6 +26,8 @@ namespace utilities {
 		
 		vtkSmartPointer<vtkImageData> vti(reader->GetOutput());
 		vti->GetDimensions(dim);
+		dim[0]--; dim[1]--; dim[2]--;
+		if( dim[2] <= 0 ) dim[2] = 1;
 		
 		int tdim[] = { dim[0]+1, dim[1]+1, dim[2]==1?dim[2]:dim[2]+1 };
 		
@@ -135,6 +137,8 @@ namespace utilities {
 		
 		vtkSmartPointer<vtkRectilinearGrid> vtr(reader->GetOutput());
 		vtr->GetDimensions(dim);
+		dim[0]--; dim[1]--; dim[2]--;
+		if( dim[2] <= 0 ) dim[2] = 1;
 		
 		int tdim[] = { dim[0]+1, dim[1]+1, dim[2]==1?dim[2]:dim[2]+1 };
 		
