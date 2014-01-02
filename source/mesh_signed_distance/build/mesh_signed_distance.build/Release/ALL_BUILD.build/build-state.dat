@@ -1,0 +1,28 @@
+TALL_BUILD
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh
+c0000000052A6CDE000000000000000F8
+t1386663392
+s248
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies37fe98600557b841^f14799600557b841^---0#1#0#--18"Check dependencies36"B4E38690-0514-4ADA-B7CE-C8768309A52B-
+
+CPhaseScriptExecution "CMake Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh
+s408356192.600332
+e408356192.618066
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'0dfb99600557b841^82399e600557b841^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-408356192#0#8#-0#-----2@26"echo Build\ all\ projects-408356192#9#26#-0#-----2@19"Build all projects-408356192#35#19#-0#-----0#0#0#--389"PhaseScriptExecution "CMake Rules" build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    /bin/sh -c /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Release/ALL_BUILD.build/Script-A231BD9C2BED479498215B4C.sh36"81A77628-6B6D-4D03-A578-658DCD82D324-
+

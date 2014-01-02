@@ -1,0 +1,97 @@
+Tmesh_signed_distance
+v5
+r1
+cCheck dependencies
+cCompileC build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/libmesh_signed_distance.a normal x86_64
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000520119EF00000000000000AA
+t1375803887
+s170
+
+N/Users/jgregson/Code/GithubProjects/utilities/include/mesh_signed_distance.h
+c0000000052A6C51C00000000000001AB
+t1386661148
+s427
+
+N/Users/jgregson/Code/GithubProjects/utilities/include/vec3.h
+c0000000052A66C0B000000000000132D
+t1386638347
+s4909
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/libmesh_signed_distance.a
+t2
+s0
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.LinkFileList
+c0000000052A6CD7600000000000000B9
+t1386663286
+s185
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o
+t2
+s0
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh
+c0000000052A6CD7600000000000000FD
+t1386663286
+s253
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp
+c0000000052A6C583000000000000052B
+t1386661251
+s1323
+i<vec3.h>
+i<mesh_signed_distance_cgal.h>
+i<mesh_signed_distance.h>
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance_cgal.h
+c0000000052A6C49400000000000006CF
+t1386661012
+s1743
+
+CBuild AST from /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies161802f60457b841^a2b506f60457b841^---0#1#0#--18"Check dependencies36"12EC39C6-54B0-480C-A986-9A3EECAEC594-
+
+CCompileC build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s408356086.028242
+e408356088.978546
+r1
+xCompileC
+xbuild/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp896107f60457b841^d383faf80457b841^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp0000000000000000^2962"CompileC build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o mesh_signed_distance.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -DCGAL_USE_MPFR -DCGAL_USE_GMP -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/include -I/usr/local/include -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -I/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include -I/Users/jgregson/Code/ThirdParty/CGAL-4.1/include -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/DerivedSources/x86_64 -I/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug -MMD -MT dependencies -MF /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.d --serialize-diagnostics /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.dia -c /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp -o /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.o36"0C0C0FA6-9D02-4EDB-9093-477C8F359862-
+
+CLibtool /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/libmesh_signed_distance.a normal x86_64
+s408356088.985381
+e408356089.080108
+r1
+xLibtool
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/libmesh_signed_distance.a
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Libtool build/Debug/libmesh_signed_distance.a normal x86_644850fcf80457b841^5e8114f90457b841^---0#0#0#--827"Libtool build/Debug/libmesh_signed_distance.a normal x86_64    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug -filelist /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Objects-normal/x86_64/mesh_signed_distance.LinkFileList -o /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug/libmesh_signed_distance.a36"A3264CAF-EFC6-4D6F-B6AC-288178A65C3A-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh
+s408356089.092993
+e408356089.122802
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build && make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mesh_signed_distance.Debug
+omake[1]: Nothing to be done for `PostBuild.mesh_signed_distance.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'0d6d18f90457b841^6d6f1ff90457b841^-457"echo "Depend check for xcode"Depend check for xcodecd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build && make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mesh_signed_distance.Debugmake[1]: Nothing to be done for `PostBuild.mesh_signed_distance.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-408356089#0#30#-0#-----2@23"Depend check for xcode-408356089#30#23#-0#-----2@332"cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build && make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mesh_signed_distance.Debug-408356089#53#332#-0#-----2@72"make[1]: Nothing to be done for `PostBuild.mesh_signed_distance.Debug'.-408356089#385#72#-0#-----0#0#0#--417"PhaseScriptExecution "CMake PostBuild Rules" build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    /bin/sh -c /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/mesh_signed_distance.build/Script-A92CA1B82F1D42C6A6CFA365.sh36"8CA1446C-ACC5-42C9-BF78-71EE86C97107-
+

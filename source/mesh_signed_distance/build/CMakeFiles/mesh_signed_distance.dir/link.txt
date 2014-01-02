@@ -1,0 +1,2 @@
+/usr/bin/ar cr /Users/jgregson/Code/GithubProjects/utilities/libs/libmesh_signed_distance.a  CMakeFiles/mesh_signed_distance.dir/mesh_signed_distance.cpp.o
+/usr/bin/ranlib /Users/jgregson/Code/GithubProjects/utilities/libs/libmesh_signed_distance.a

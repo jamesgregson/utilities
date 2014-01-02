@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              FD07223BE5084EFCAB80C2AD /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 065FD498E7A044109387F250 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            A231BD9C2BED479498215B4C /* CMake Rules */,
+                     );
+                     dependencies = (
+                            761F414062184342A14363F4 /* PBXTargetDependency */,
+                            546F3E3AE9C04F879E0100F1 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              3DDAAC29CC634D0682AC494B /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 4710115E69FD46969F1160A9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            EBDB9D93B17849538C872DB9 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+F727704FD6D047E49CA15838 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp */ = {isa = PBXBuildFile; fileRef = D8C2C69C1EBC4CF390E4A172 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+297628D14C1C47FBBB826288 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance_cgal.h */ = {isa = PBXBuildFile; fileRef = A1FDBD03A66E4D3999296AF1 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance_cgal.h */; settings = { COMPILER_FLAGS = ""; }; };
+6581F2736E39489FA3EE7748 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 233627CDFBFE4A5D9C50ADE0 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              8F6CA41150CD4E9182408C30 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              3A47EC41E3A24F208F86E044 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              1B48319B0C3E4BEBA09E83E1 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              51C2097AC35549C7B225E6FA /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              5F3B1508587F4C53B8404464 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              46BF0B7F8BF64A90901B38CE /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 834CC4972864412383C9E27A /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3DDAAC29CC634D0682AC494B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              5D13D00CBC044FC782F0AC43 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 834CC4972864412383C9E27A /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D54D31060EAE4673AB224DC5;
+                     remoteInfo = mesh_signed_distance;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+233627CDFBFE4A5D9C50ADE0 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+D8C2C69C1EBC4CF390E4A172 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "mesh_signed_distance.cpp"; path = "mesh_signed_distance.cpp"; sourceTree = SOURCE_ROOT; };
+A1FDBD03A66E4D3999296AF1 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance_cgal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "mesh_signed_distance_cgal.h"; path = "mesh_signed_distance_cgal.h"; sourceTree = SOURCE_ROOT; };
+90826E80E77F437798DE5594 /* mesh_signed_distance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libmesh_signed_distance.dylib"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              A945C641E960405387A8CBA6  = {
+                     isa = PBXGroup;
+                     children = (
+                            39D10BDEC084406A8D7DABB2 /* Sources */,
+                            02B37693ED1842FD82EF8D5C /* Resources */,
+                            D0CD1C5232D54EFDB071C2CE /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              39D10BDEC084406A8D7DABB2 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A182192311594AC79F4DAE77 /* ALL_BUILD */,
+                            EEC5B1F9D4A24A07A0E81453 /* ZERO_CHECK */,
+                            11842279413946AB9E701EE4 /* mesh_signed_distance */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              02B37693ED1842FD82EF8D5C /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              A182192311594AC79F4DAE77 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AC420BBDDFFA42B7B6E0DA84 /* CMake Rules */,
+                            233627CDFBFE4A5D9C50ADE0 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              AC420BBDDFFA42B7B6E0DA84 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              EEC5B1F9D4A24A07A0E81453 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B03F9CD1D6AF4AAF81EE9477 /* CMake Rules */,
+                            233627CDFBFE4A5D9C50ADE0 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              B03F9CD1D6AF4AAF81EE9477 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              11842279413946AB9E701EE4 /* mesh_signed_distance */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5424AE313AFF4BC3AFD02462 /* Source Files */,
+                            16FD05E7527D42E286D41445 /* Header Files */,
+                            233627CDFBFE4A5D9C50ADE0 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/CMakeLists.txt */,
+                     );
+                     name = mesh_signed_distance;
+                     sourceTree = "<group>";
+              };
+              5424AE313AFF4BC3AFD02462 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D8C2C69C1EBC4CF390E4A172 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              16FD05E7527D42E286D41445 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A1FDBD03A66E4D3999296AF1 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance_cgal.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              D0CD1C5232D54EFDB071C2CE /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            90826E80E77F437798DE5594 /* mesh_signed_distance */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              D54D31060EAE4673AB224DC5 /* mesh_signed_distance */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = CDB7A382FF444DAEBDED5ACD /* Build configuration list for PBXNativeTarget "mesh_signed_distance" */;
+                     buildPhases = (
+                            5D27C040F48246F0890BEB02 /* Sources */,
+                            700ADD13E5334D6A89B801FE /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            761F414062184342A14363F4 /* PBXTargetDependency */,
+                     );
+                     name = mesh_signed_distance;
+                     productName = mesh_signed_distance;
+                     productReference = 90826E80E77F437798DE5594 /* mesh_signed_distance */;
+                     productType = "com.apple.product-type.library.dynamic";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              834CC4972864412383C9E27A /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 9EB7F8499BB24E8AA9346CFB /* Build configuration list for PBXProject  "mesh_signed_distance" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            3A47EC41E3A24F208F86E044 /* Debug */,
+                            1B48319B0C3E4BEBA09E83E1 /* Release */,
+                            51C2097AC35549C7B225E6FA /* MinSizeRel */,
+                            5F3B1508587F4C53B8404464 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = A945C641E960405387A8CBA6;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            FD07223BE5084EFCAB80C2AD /* ALL_BUILD */,
+                            3DDAAC29CC634D0682AC494B /* ZERO_CHECK */,
+                            D54D31060EAE4673AB224DC5 /* mesh_signed_distance */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              D69E9068FFB64DC4B326710C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              A231BD9C2BED479498215B4C /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              B758B9FDA82F4756A16EDAAF /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              EBDB9D93B17849538C872DB9 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              700ADD13E5334D6A89B801FE /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/mesh_signed_distance_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              5D27C040F48246F0890BEB02 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            F727704FD6D047E49CA15838 /* /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/mesh_signed_distance.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              761F414062184342A14363F4 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3DDAAC29CC634D0682AC494B /* ZERO_CHECK */;
+                     targetProxy = 46BF0B7F8BF64A90901B38CE /* PBXContainerItemProxy */;
+              };
+              546F3E3AE9C04F879E0100F1 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D54D31060EAE4673AB224DC5 /* mesh_signed_distance */;
+                     targetProxy = 5D13D00CBC044FC782F0AC43 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              2447EAD650CD45678A06CD5F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/build;
+                     };
+                     name = Debug;
+              };
+              D34ACBA5084948E3B4E27253 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/build;
+                     };
+                     name = Release;
+              };
+              DF2FF1272B234405BE115D94 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/build;
+                     };
+                     name = MinSizeRel;
+              };
+              9BE8EED04EDB48E181BF993C /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              8609D4451C03466993DA2A7E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              CF059554BDBF447F9DE5F158 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              960CD5AA02494B4FB69C4A7B /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              FC4EA28BF99745E0986C63E1 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              E594C44003D443469580EA89 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              21C1C36B65B943A4AE7A44AA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              373544E41DD14346B7118A9C /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              954505DF351C49AE899BD75B /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              BBF0D65443B748ED9130A720 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", mesh_signed_distance_EXPORTS, CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/Debug;
+                            LIBRARY_SEARCH_PATHS = " /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "   -fPIC  ";
+                            OTHER_CPLUSPLUSFLAGS = "   -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names /usr/local/lib/libmpfr.dylib /usr/local/lib/libgmp.dylib /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/libCGAL.dylib /usr/local/lib/libboost_thread-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = mesh_signed_distance;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              4DD867B3497140EAADD09EFA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            CONFIGURATION_BUILD_DIR = /Users/jgregson/Code/GithubProjects/utilities/libs;
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", mesh_signed_distance_EXPORTS, CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = /Users/jgregson/Code/GithubProjects/utilities/libs;
+                            LIBRARY_SEARCH_PATHS = " /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names /usr/local/lib/libmpfr.dylib /usr/local/lib/libgmp.dylib /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/libCGAL.dylib /usr/local/lib/libboost_thread-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = mesh_signed_distance;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              F791F3B03609412098DFA12D /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", mesh_signed_distance_EXPORTS, CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/MinSizeRel;
+                            LIBRARY_SEARCH_PATHS = " /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names /usr/local/lib/libmpfr.dylib /usr/local/lib/libgmp.dylib /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/libCGAL.dylib /usr/local/lib/libboost_thread-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = mesh_signed_distance;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              360B42E9FBCD45C789C45506 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", mesh_signed_distance_EXPORTS, CGAL_USE_MPFR, CGAL_USE_GMP, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/usr/local/include, /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build, "/Users/jgregson/Code/ThirdParty/CGAL-4.1_build/include", "/Users/jgregson/Code/ThirdParty/CGAL-4.1/include", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/.", "/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/../../include", );
+                            INSTALL_PATH = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/RelWithDebInfo;
+                            LIBRARY_SEARCH_PATHS = " /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "       -DNDEBUG -fPIC  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names /usr/local/lib/libmpfr.dylib /usr/local/lib/libgmp.dylib /Users/jgregson/Code/ThirdParty/CGAL-4.1_build/lib/libCGAL.dylib /usr/local/lib/libboost_thread-mt.dylib /usr/local/lib/libboost_system-mt.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = mesh_signed_distance;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              9EB7F8499BB24E8AA9346CFB /* Build configuration list for PBXProject  "mesh_signed_distance" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            2447EAD650CD45678A06CD5F /* Debug */,
+                            D34ACBA5084948E3B4E27253 /* Release */,
+                            DF2FF1272B234405BE115D94 /* MinSizeRel */,
+                            9BE8EED04EDB48E181BF993C /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              065FD498E7A044109387F250 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8609D4451C03466993DA2A7E /* Debug */,
+                            CF059554BDBF447F9DE5F158 /* Release */,
+                            960CD5AA02494B4FB69C4A7B /* MinSizeRel */,
+                            FC4EA28BF99745E0986C63E1 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4710115E69FD46969F1160A9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E594C44003D443469580EA89 /* Debug */,
+                            21C1C36B65B943A4AE7A44AA /* Release */,
+                            373544E41DD14346B7118A9C /* MinSizeRel */,
+                            954505DF351C49AE899BD75B /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CDB7A382FF444DAEBDED5ACD /* Build configuration list for PBXNativeTarget "mesh_signed_distance" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            BBF0D65443B748ED9130A720 /* Debug */,
+                            4DD867B3497140EAADD09EFA /* Release */,
+                            F791F3B03609412098DFA12D /* MinSizeRel */,
+                            360B42E9FBCD45C789C45506 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 834CC4972864412383C9E27A;
+}

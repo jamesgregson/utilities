@@ -1,0 +1,46 @@
+TZERO_CHECK
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-0B7576FE07574F35B30A4601.sh
+c0000000052A6CD7500000000000000F9
+t1386663285
+s249
+
+N/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh
+c0000000052A6CDB700000000000000F9
+t1386663351
+s249
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencieseacd504e0557b841^cbf3504e0557b841^---0#1#0#--18"Check dependencies36"9C41E41B-9BF5-4604-BAAC-BDF4B521C127-
+
+CPhaseScriptExecution "CMake Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-0B7576FE07574F35B30A4601.sh
+s408356085.957208
+e408356085.991687
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-0B7576FE07574F35B30A4601.sh
+oecho ""
+o
+omake -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'5c1bf6f50457b841^01dffdf50457b841^-181"echo ""make -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-408356085#0#8#-0#-----2@117"make -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.make-408356085#9#117#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-408356085#126#55#-0#-----0#0#0#--387"PhaseScriptExecution "CMake Rules" build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-0B7576FE07574F35B30A4601.sh    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    /bin/sh -c /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-0B7576FE07574F35B30A4601.sh36"94EA74C3-1F57-4B22-8ED4-C56C24455253-
+
+CPhaseScriptExecution "CMake Rules" /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh
+s408356174.317598
+e408356174.348750
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh
+oecho ""
+o
+omake -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'6f9b514e0557b841^ae47594e0557b841^-181"echo ""make -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-408356174#0#8#-0#-----2@117"make -f /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/CMakeScripts/ReRunCMake.make-408356174#9#117#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-408356174#126#55#-0#-----0#0#0#--387"PhaseScriptExecution "CMake Rules" build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh    cd /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance    /bin/sh -c /Users/jgregson/Code/GithubProjects/utilities/source/mesh_signed_distance/build/mesh_signed_distance.build/Debug/ZERO_CHECK.build/Script-EBDB9D93B17849538C872DB9.sh36"28A0D195-78C0-48D4-A062-7FF5DF586DF7-
+
