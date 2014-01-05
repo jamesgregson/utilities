@@ -1,6 +1,6 @@
 #ifndef FIXED_POINT_H
 #define FIXED_POINT_H
-
+ 
 /**
  @file fixed_point.h
  @author James Gregson (james.gregson@gmail.com)

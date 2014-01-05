@@ -17,7 +17,7 @@ namespace geom {
 		}
 		
 		vec3( const vec3<real> &in ){
-			x() = in.x(); y()=in.x(); z()=in.z();
+			x() = in.x(); y()=in.y(); z()=in.z();
 		}
         
         vec3( const real _x, const real _y=0.0, const real _z=0.0 ){
