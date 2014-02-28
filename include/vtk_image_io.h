@@ -148,9 +148,9 @@ namespace utilities {
 		xcoords->DeepCopy( vtr->GetXCoordinates() );
 		ycoords->DeepCopy( vtr->GetYCoordinates() );
 		zcoords->DeepCopy( vtr->GetZCoordinates() );
-		aabb[0] = xcoords->GetValue(0); aabb[1] = xcoords->GetValue(dim[0]-1);
-		aabb[2] = ycoords->GetValue(0); aabb[3] = ycoords->GetValue(dim[1]-1);
-		aabb[4] = zcoords->GetValue(0); aabb[5] = zcoords->GetValue(dim[2]-1);
+		aabb[0] = xcoords->GetValue(0); aabb[1] = xcoords->GetValue(dim[0]/*-1*/);
+		aabb[2] = ycoords->GetValue(0); aabb[3] = ycoords->GetValue(dim[1]/*-1*/);
+		aabb[4] = zcoords->GetValue(0); aabb[5] = zcoords->GetValue(dim[2]/*-1*/);
 		
 		vtkSmartPointer<vtkPointData> pd(vtr->GetPointData());
 		for( int arr=0; arr<pd->GetNumberOfArrays(); arr++ ){
