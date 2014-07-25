@@ -91,6 +91,19 @@ namespace geom {
             }
         }
         
+        template< typename predicate >
+        void add_item_predicate( predicate& p, const stored item ){
+            if( p(item,m_minim,m_maxim) ){
+                if( m_child ){
+                    for( int i=0; i<8; i++ ){
+                        m_child[i].add_item_predicate( p, item );
+                    }
+                } else {
+                    m_items.push_back( item );
+                }
+            }
+        }
+        
         void add_item( const stored item, const real3 &minim, const real3 &maxim ){
             if( minim[0] <= m_maxim[0] && minim[1] <= m_maxim[1] && minim[2] <= m_maxim[2] && maxim[0] >= m_minim[0] && maxim[1] >= m_minim[1] && maxim[2] >= m_minim[2] ){
                 if( m_child ){

@@ -5,10 +5,10 @@
 #include<algorithm>
 
 #include<vec3.h>
-#include<geometric_predicates.h>
+//#include<geometric_predicates.h>
 
 namespace geom {
-  
+  /*
     typedef enum {
         DOES_NOT_INTERSECT,
         DOES_INTERSECT,
@@ -55,6 +55,7 @@ namespace geom {
         
         return DOES_INTERSECT;
     }
+   */
         
     
     template< typename real, typename real3 >

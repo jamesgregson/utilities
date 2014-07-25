@@ -5,6 +5,7 @@
 #include<algorithm>
 
 #include"octree.h"
+#include"triangle.h"
 
 namespace geom {
     
@@ -34,7 +35,7 @@ namespace geom {
             
         }
         
-        void initialize( const std::vector<real3> & verts, const std::vector<int> & tris ){
+        void initialize( const std::vector<real3> & verts, const std::vector<int> & tris, int subdiv_level=5 ){
             m_verts = verts;
             m_tris  = tris;
             if( m_verts.size() == 0 ){
@@ -52,6 +53,7 @@ namespace geom {
                 m_normal[i] = real3(0,0,0);
             }
             m_octree = geom::octree_node<real,real3,int>(m_minim,m_maxim);
+            m_octree.subdivide_n_levels( subdiv_level );
             for( int i=0; i<m_tris.size(); i+=3 ){
                 real3 A = m_verts[m_tris[i+0]];
                 real3 B = m_verts[m_tris[i+1]];
@@ -66,8 +68,19 @@ namespace geom {
                 trimaxim = trimaxim.max( B );
                 triminim = triminim.min( C );
                 trimaxim = trimaxim.max( C );
-                m_octree.add_item( i/3, triminim, trimaxim );
+                //m_octree.add_item( i/3, triminim, trimaxim );
+                try {
+                    m_octree.add_item_predicate( *this, i/3 );
+                } catch( const char *e ){}
             }
+        }
+        
+        bool operator()( int id, const real3& minim, const real3& maxim ){
+            int vid[] = { m_tris[id*3+0], m_tris[id*3+1], m_tris[id*3+2] };
+            real3 cen = (maxim+minim)/2.0;
+            real3 n, cp = triangle_closest_point<real,real3>( m_verts[vid[0]], m_normal[vid[0]], m_verts[vid[1]], m_normal[vid[1]], m_verts[vid[2]], m_normal[vid[2]], cen, n );
+            //return cp[0] >= minim[0] && cp[0] <= maxim[0] && cp[1] >= minim[1] && cp[1] <= maxim[1] && cp[2] >= minim[2] && cp[2] <= maxim[2];
+            return (cp-cen).length_squared() < ((maxim-minim)/2.0).length_squared();
         }
         
         real3 operator()( const real3 &p, const real size, real3 &n ) const {
@@ -80,13 +93,15 @@ namespace geom {
             real3 closest_point, closest_normal, tmp, tnormal;
             for( int i=0; i<tris.size(); i++ ){
                 int vid[] = { m_tris[tris[i]*3+0], m_tris[tris[i]*3+1], m_tris[tris[i]*3+2] };
-                tmp = triangle_closest_point<real,real3>( m_verts[vid[0]], m_normal[vid[0]], m_verts[vid[1]], m_normal[vid[1]], m_verts[vid[2]], m_normal[vid[2]], p, tnormal );
+                try {
+                    tmp = triangle_closest_point<real,real3>( m_verts[vid[0]], m_normal[vid[0]], m_verts[vid[1]], m_normal[vid[1]], m_verts[vid[2]], m_normal[vid[2]], p, tnormal );
                 td = (p-tmp).length_squared();
                 if( td < mind ){
                     mind = td;
                     closest_point = tmp;
                     closest_normal = tnormal;
                 }
+                } catch( const char* ){}
             }
             n = closest_normal;
             return closest_point;
